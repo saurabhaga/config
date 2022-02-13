@@ -1,0 +1,13 @@
+spring:
+   # On local run, pass variables while start. On heroku deployment, heorku automatically sets these variables 
+   # based on the db we mapped in app . Get all these details from heroku ui 
+
+  datasource:
+    username: ${SPRING_DATASOURCE_USERNAME:postgres}
+    password: ${SPRING_DATASOURCE_PASSWORD:password}
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5432/UserManagement}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
