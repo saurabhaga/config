@@ -11,6 +11,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQL81Dialect
+      hibernate.default_schema: public
     hibernate:
       ddl-auto: update
     show-sql: true
