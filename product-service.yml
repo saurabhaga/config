@@ -1,0 +1,11 @@
+server:
+  port: ${PORT:0}
+
+spring:
+  profiles:
+    active:
+    - dev
+  data:
+    mongodb:
+      uri: ${MONGO-DB_URI:mongodb+srv://test:test@cluster0.u6v9p.mongodb.net}
+      database: ${MONGO_DATABASE:products}
