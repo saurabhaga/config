@@ -16,7 +16,9 @@ spring:
 
 # custom properties
 prefilter:
-  ignored: /user/authenticate,/user/register
+  ignored:
+    - /user/authenticate
+    - /user/register
 # auto config refresh enabled. to achieve this write a custom scheduler which will trigger /actuator/refresh end point 
 client:
   config:
