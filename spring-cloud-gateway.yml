@@ -21,8 +21,8 @@ prefilter:
 client:
   config:
     auto-refresh:
-      enabled: false
-      delay: 900 # 15 mins 
+      enabled: true
+      delay: 120 # 2 mins 
 
 
     
