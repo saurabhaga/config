@@ -2,10 +2,10 @@ spring:
   cloud:
     gateway:
       routes:
-      - id: test-service
-        uri: lb://test
+      - id: product-service
+        uri: lb://product-service
         predicates:
-        - Path=/v1/**
+        - Path=/products/**
       - id: authentication-service
         uri: lb://authentication
         predicates:
