@@ -7,5 +7,5 @@ spring:
     - dev
   data:
     mongodb:
-      uri: ${MONGO-DB_URI:xxx}
-      database: ${MONGO_DATABASE:products}
+      #uri: ${MONGO-DB_URI:xxx}
+      #database: ${MONGO_DATABASE:products}
