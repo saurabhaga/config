@@ -1,4 +1,4 @@
 datasource:
-  endpoint: https://disease.sh/v3/covid-19/historical/all
+  endpoint: https://disease.sh/v3/covid-19/historical/
   ttl: 10
   interval: 7
