@@ -17,10 +17,14 @@ spring:
         uri: lb://authentication
         predicates:
         - Path=/user/**
+      - id: covid19-service
+        uri: lb://covid19-cases
+        predicates:
+        - Path=/covid19/**  
 
 # custom properties
 prefilter:
-  ignored: /user/authenticate,/user/register
+  ignored: /user/authenticate,/user/register,covid19/cases/all,covid19/deaths/all,
 # auto config refresh enabled. to achieve this write a custom scheduler which will trigger /actuator/refresh end point 
 client:
   config:
