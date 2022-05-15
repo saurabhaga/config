@@ -1,6 +1,13 @@
 spring:
   cloud:
     gateway:
+      # added for CORS to allow all host , methods and origin
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+              allowedOrigins: "*"
+              allowedMethods: "*"
+              allowedHeaders: "*"
       routes:
       - id: product-service
         uri: lb://product-service
